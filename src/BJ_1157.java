@@ -84,3 +84,43 @@ public class BJ_1157 {
         bw.close();
     }
 }
+
+//// 구글링 참고 코드
+//import java.io.*;
+//
+//public class BJ_1157 {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//
+//        String s = br.readLine();
+//        int[] alpha = new int[26];
+//
+//        for (int i = 0; i < s.length(); i++) {
+//            if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+//                alpha[s.charAt(i) - 97]++;
+//            }
+//            else {
+//                alpha[s.charAt(i) - 65]++;
+//            }
+//        }
+//
+//        int max = -1;
+//        char ch = '?';
+//
+//        for (int i = 0; i < 26; i++) {
+//            if (max < alpha[i]) {
+//                max = alpha[i];
+//                ch = (char) (i + 65);
+//            }
+//            else if (max == alpha[i]) {
+//                ch = '?';
+//            }
+//        }
+//
+//        bw.write(ch);
+//        br.close();
+//        bw.flush();
+//        bw.close();
+//    }
+//}
