@@ -1,3 +1,4 @@
+// StringBuilder 사용 X
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -41,7 +42,7 @@ public class BJ_4948 {
     }
 }
 
-// // StringBuilder 사용
+// // StringBuilder 사용 O
 // import java.io.BufferedReader;
 // import java.io.IOException;
 // import java.io.InputStreamReader;
