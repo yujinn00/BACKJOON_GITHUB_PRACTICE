@@ -3,24 +3,24 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BJ_9020 {
-    public static boolean[] prime;
+    public static boolean[] prime = new boolean[10001];
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        get_prime();
 
         int a = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < a; i++) {
             int b = Integer.parseInt(br.readLine());
 
-            prime = new boolean[b + 1];
-            get_prime();
-
             int c = b / 2;
             int d = b - c;
 
             while (true) {
                 if (!prime[c] && !prime[d]) {
+                    System.out.println(c + " " + d);
                     break;
                 }
                 else {
@@ -28,8 +28,6 @@ public class BJ_9020 {
                     d++;
                 }
             }
-
-            System.out.println(c + " " + d);
         }
     }
 
