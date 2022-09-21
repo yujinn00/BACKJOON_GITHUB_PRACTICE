@@ -16,7 +16,7 @@ public class BJ_25305 {
         for (int i = 0; i < a; i++) {
             c[i] = Integer.parseInt(st.nextToken());
         }
-
+        
         Arrays.sort(c);
 
         System.out.println(c[a - b]);
