@@ -67,7 +67,7 @@ public class Main {
 //        Arrays.sort(a);
 
 //        for (int i = a.length - 1; i >= 0; i--) {
-//            System.out.println(a[i]);
+//            System.out.print(a[i]);
 //        }
 //    }
 // }
@@ -90,7 +90,7 @@ public class Main {
 //
 //        for (int i = 9; i >= 0; i--) {
 //            while (b[i]-- > 0) { // 반복을 한번 마치면 그때 --가 처리됨
-//                System.out.println(i);
+//                System.out.print(i);
 //            }
 //        }
 //    }
