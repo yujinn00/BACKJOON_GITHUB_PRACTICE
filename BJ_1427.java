@@ -1,8 +1,9 @@
+// 내가 짠 별로인 코드
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BJ_1427 {
+public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -50,3 +51,47 @@ public class BJ_1427 {
         }
     }
 }
+
+// // toCharArray() 이용
+// import java.io.BufferedReader;
+// import java.io.IOException;
+// import java.io.InputStreamReader;
+// import java.util.Arrays;
+
+// public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+//        char[] a = br.readLine().toCharArray();
+
+//        Arrays.sort(a);
+
+//        for (int i = a.length - 1; i >= 0; i--) {
+//            System.out.println(a[i]);
+//        }
+//    }
+// }
+
+// // (문자 - '0 = 숫자) 성질 이용
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        String a = br.readLine();
+//        int[] b = new int[10];
+//
+//        for (int i = 0; i < a.length(); i++) {
+//            b[a.charAt(i) - '0']++; // 문자 - '0 = 숫자
+//        }
+//
+//        for (int i = 9; i >= 0; i--) {
+//            while (b[i]-- > 0) { // 반복을 한번 마치면 그때 --가 처리됨
+//                System.out.println(i);
+//            }
+//        }
+//    }
+//}
