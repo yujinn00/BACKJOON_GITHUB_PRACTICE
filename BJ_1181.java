@@ -1,3 +1,4 @@
+// Comparator 사용
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -38,3 +39,34 @@ public class BJ_1181 {
         System.out.println(sb);
     }
 }
+
+// // lambda 사용
+// import java.io.BufferedReader;
+// import java.io.IOException;
+// import java.io.InputStreamReader;
+// import java.util.Arrays;
+
+// public class BJ_1181 {
+//     public static void main(String[] args) throws IOException {
+//         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//         StringBuilder sb = new StringBuilder();
+
+//         int a = Integer.parseInt(br.readLine());
+//         String[] b = new String[a];
+
+//         for (int i = 0; i < a; i++) {
+//             b[i] = br.readLine();
+//         }
+
+//         Arrays.sort(b, (o1, o2) -> o1.length() == o2.length() ? o1.compareTo(o2) : o1.length() - o2.length());
+
+//         sb.append(b[0]).append("\n"); // 정렬된 첫 단어 sb 저장
+
+//         for (int i = 1; i < a; i++) {
+//             if (!b[i].equals(b[i - 1])) { // 같은 단어는 한 번씩만 sb 저장
+//                 sb.append(b[i]).append("\n");
+//             }
+//         }
+//         System.out.println(sb);
+//     }
+// }
